@@ -1,0 +1,408 @@
+Java : is an Object Oriented Programming Lang.
+	: case sensitive
+	:open Source
+	
+History : Before Java: "OAK" :1991 : James goasling : single : console app
+	:Renamed "Java" from "OAK" : 1995 : James Goasling : multiuser : console app and desktop app
+
+	:right now java (oracle corporation)
+=========================================
+
+Java Features
+==========
+1) simple
+2) OO
+3) interpreter : JVM 
+4) secure :  bytecode file : 
+5) robust
+6) multithreading :
+7) dynamic
+8) high performance
+9) platform independent
+10) portable
+============================================
+
+JVM : JDK : JRE :
+
+JDK : Java Development Kit : tools /software 
+
+
+JVM : Java Virtual Machine : intermideate code
+	:conversion : byte code to machine code
+	:can not convert direct source code file into machine code file
+
+JRE: Java Runtime Env.
+	: runtime supported Lib
+	
+
+JIT compiler:  Just In Time 
+
+===========================================
+Editor : Notepad ,Notepad++
+
+IDE (Integrated Development Env.): eclipse, netbeans,intellJ etc.... 
+============================================
+
+variable : any type of value want to store in some place i.e
+	: has an identifire
+
+	1) do not used as keyword for variable
+	2) can not start with digit
+	3) start with letter or "_"
+	4) followed with digit as a variable
+	5) does not allow space between variable name
+
+data type :  to reserve the memory for variable to storing some value
+	:there are 2 tyeps of data type
+	1) primitive data type : fixed size of data type 
+		1.numeric
+			1. integeral point : int,long,byte,char etc..	
+			2. floating point :float , double
+		2.non numeric: return , boolean
+	2) non primitive data type :there is no fixed size 
+		class, interface,array 
+==================================================
+Operators : any type of operation want to perform 
+	:between 2 operands must required one or more operator
+	:a+b : a ,b is an operands and "+" is an operator
+
+1) airthmatic : +,-,*,/,%
+2) relational : < , >, <= ,>=
+3) logical : && ,||
+4) inc/dec : ++ ,--
+5) assignment : == , != 
+6) shift op : << ,>>
+7) bitwise : & ,! , |
+8) conditional or ternary op :  ?:
+
+============================================
+Condition  : 
+
+1) if : if condition is true then your if block will execute otherwise nothing
+	if(condition)
+	{
+		statement
+	}
+
+2) if else : if condition is true then your if block will execute otherwise else block will execute
+	if(condition)
+	{
+		statement
+	}
+	else
+	{
+		statement
+	}
+
+
+3) nested if : condition of an condition 
+	if(condition)
+	{
+		if(condition)
+		{
+			statement
+		}
+		else
+		{
+			statement
+		}
+
+	}
+	else
+	{
+		statement
+	}
+
+
+
+4) else if ladder  : you have choice or many choice but select only one condition at a time
+		if(condition)
+		{
+			statement
+		}
+		else if(condition)
+		{
+			statement
+		}
+		else if(condition)
+		{
+			statement
+		}
+		....
+		else
+		{
+			statment
+		}	
+
+
+5) switch case :
+===========================================
+Looping :  Iterative or repetative
+	
+1. entry control loop
+	1.while
+	2.for
+
+2. exit control loop
+	1.do while
+
+========================================
+OOPs : Object Oriented Programming Systems : black box testing, functional testing
+=============================
+
+1) class : is an collection of data members (variables) and member fucntions (process, methods) with its behaviors 
+
+2) object : is an instances of an class
+	:to create memory for that class
+	: to access the whole properties of an class except private
+	:using "new" keyword to create object with using also constructor
+	
+
+3) encapsulation : wrapping up of data into single unit i.e : data hide
+		:private your data members and menber functions only
+=======================================
+Constructor : is an special member function becuase its an same name as an classname
+	:same as member function but do not retrun any value even void
+	: we can access some access modifire;
+	: to initialized some value in constructor
+	: can be overload
+	: when object is created then constructor is called...
+	:there are mainly 2 types 
+	1) default : do not have any argument
+	2) parameterized	:may have one or more arguement
+------------------------------
+Scanner class: java.util pckage
+	: to get the value from the user ,its same as scanf() in c 
+	:its must have one argument in scanner class constructor : System.in
+	int 	=>	nextInt()
+	float	=>	nextFloat()
+	word 	=> 	next()	//space does not consider
+	line	=>	nextLine()   //space consider
+
+Array : Group of elements which can store multiple value in single variable with same data type
+
+Jagged Array or Ragged Array :Array with in array
+	:its same like 2D array 
+	:only given value in Row not in cloumn
+	:every row has an different column
+
+1 2 3 4 5
+1 2 3
+1 2 3 4
+
+===================================================
+4) inheritance : Properties of parent class derived into child class
+	:properties of super class extends into subclass
+	:main purpose: reusablity and extendsiblity
+	:last child class to create object to access whole properties except private
+	:"extends" thru properties from one class to another except private
+	there are mainly 5 types 
+	1) single : only one parent class derived into child class 
+	2)multilevel : single inheritance again extends into one more class
+	3)hierarchical : one parent having 2 or more child class
+	4) multiple : java does not support directly
+	5) hybrid : java does not support directly
+
+5) polymorphism : ability to take one name having different forms
+	there are mainly 2 types
+	1) compile time (Method overloading):the method name should be same in a single class but its behaviors(argument and data types) are different i.e
+
+	2) run time (Method Overriding) : the whole method of the signature should be same in super class as well as in sub class but its behaviors(body part) are different...
+===============================================
+Keywords
+======
+1)abstract : data hiding purpose : data hiding in different level
+	: only essential part should be display rest of the part will be hide that is called...	
+	1) using with class : i can not create object of that class
+		:must inherit your abstract class into your child class
+
+	2) using with method  : do not specify body in that class
+		:so class must be abstract
+		:must override your abstract method into your child class
+
+2)final : means constant or fixed at value side
+	1) using with variable : means constant or fixed at value side
+		:at declaration time must assigned value
+		:do not assigned another time compile time or runtime
+	
+	2) using with class : OPP of abstract class
+	
+	3) using with method : Opp of abstract method
+
+3)static : means constant or fixed at memory side
+	1) using with variable : means constant or fixed at memory side
+			:opp of final varaibale
+	2)using with method : only static members are allow in static method
+		:only class name throgh called the static method
+		: 
+
+ 
+4)interface : is an same as a class 
+	:variables  are final or static
+	:methods are abstract
+	:we can not create object of interface just create ref
+	:while we used with class by using "implements"
+	:to solved the problem of multiple inheritance
+
+5)this : when classmembers and arguments members are same at that timewe inroduced this keyword to seprate your class member with your arguments members
+
+=============================================
+
+Common class
+---------------
+1) String : immutable : we can not changed
+	:its has so many properties just we used but do not changed anything in string
+	:temp
+2) StringBuffer Mutable: we can changed
+	:insert,append,delete,reverse : perm
+
+3) Wrapper : conversion : primitive data type to object/class and vice versa
+	primitive data type 		Wrapper class
+		int		Integer
+		float		Float
+		double		Double
+	
+	there are mainly 3 way to 
+	1)Autoboxing : direct value to object
+	
+	2) boxing : variable to object
+		
+	3) unboxing  :object to variable
+
+
+4) Object :  is an root class 
+	:is an first class of all other java classes
+	:its has so many property or methods used in userdefined classes or systendefined classes
+=============================================
+Exception Handling : error handling
+	:when abnormal condition is occure at that time Exception handling
+	: main root class is "Exception" is an root class of all other Exception classes
+	:java.lang package derived
+	there are main 2 tyeps
+
+	1) compile time(Checked Exception) : ; , " spelling etc...
+
+	2) run time (Unchecked Exception): divide by 0, etc...
+
+	3) error : runtime
+
+there are 5 keywords
+===============
+1) try : to find the error from the block
+	:in which error was found that error will throw to catch block 	
+	:that error line to remaining line in the block are skipped
+	: try followed with catch block and finally block and both
+
+2) catch :  whatever error thrown by try block that error will handled with apppropirate class
+	: catch can be multiple
+
+3) finally : 
+
+4) throw : user defined exception generate
+	:inside method
+	:new keyword and constructor
+
+
+5) throws	 : 
+
+
+ATM
+====
+Deposit : 2000rs
+
+balance = 2000
+
+with = 5000rs
+============================================
+File IO : File input output
+================
+	:java.io package
+	:stream based
+	:to used must FileNotFoundException,IOException
+stream : device/medium
+	
+1) Byte Stream : totally work in byte
+	1.InputStream : to read the data from the file
+		1.FileInputStream
+	2.OutputStream : to write the data into file
+		1.FileOutputStream
+
+2)Character Stream :unicode chracter 
+	1.Reader : to read the data from the file
+		1.FileReader
+
+	2.Writer: to write the data into file
+		1.FileWriter
+---------------------------------
+1) to open the file
+2) to used read/write mechanism
+3) to close the file
+=======================================================
+MultiThreading :
+-------------------
+	Thread : is a light weight process
+		:totally depends on process or processor	 
+		:each and every program must hav thread
+		:main() :is a thread : single threaded process
+		:when you start process for executing the code 
+MultiThreading: more than one thread work simulteneously or concurrently into single programm
+	: multiprocessing, multitasking
+	: RoundRobin algo : time quatam 
+
+Thread life cycle
+1) newborn state : 
+2) runnable state :start()
+3) running state :run()
+4) blocked state : suspend()=>resume() | wait() = > notify() | sleep(ms)
+5) dead state : stop()
+
+thread there are 2 way
+===============
+1) by extending Thread class
+2) by implementing Runnable interface
+
+=====================================================
+Collection : is an group of all primitive or non primite value/object to collect into single object that is...
+	:implements java.util package
+	: no of classes or interfaces are available
+
+interfaces are
+1) iterator : to fetch the value from the collection object
+	:1) to create ref/object of iterator with help of collection classes
+	2) to used loop with the help of itreator method
+	3) to go next with the help of iterator method
+
+classes are..
+1) ArrayList : its implements List interface
+	:its represent like dynamic array type
+	:automatically shrink and grow 
+	:display as a list wise means when you add value into object same way displlay
+	:duplicate values are allow
+	:add() and remove()
+	:default size is 0
+	:default symbol "[]"
+
+2) HashSet : its implements Set interface
+	:its represent like dynamic array type
+	:automatically shrink and grow 
+	:  every value has an hashkey
+	:each and every key transform into hashcode
+	:all value should be display via hashcode wise
+	:duplicate values are not allow
+	:add() and remove()
+	:default size is 0
+	:default symbol "[]"
+
+3) Generics : <E> 
+	:generalized your class if it is user defined /system defined 
+	:E : any class (userdefined/system defined)
+
+
+
+
+
+
+
+
+
+
